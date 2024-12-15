@@ -1,5 +1,8 @@
+import niklase.callbackLambda.A;
+
 public class Main {
     public static void main(String... args) {
-        System.out.println("Hi!");
+//        new niklase.callbackObject.A().start();
+        new A().start();
     }
 }
