@@ -36,7 +36,11 @@ The class diagram
 ## callbackObject
 
 ## Circular
-Circular dependencies attract attention, so it seems to be worthy having a look at them.
+Circular dependencies attract attention, so it seems to be worthy having a look at them. Direct contains an example of
+two classes which have a direct dependency on each other. Then, I "decoupled" the classes by introducing interfaces
+between them. While it obvious that the source code dependency between A and B has been gone, there is no hint that
+future changes of the source code will be easier. Quite the opposite, when one of the method signatures between A or B
+changes, the java interfaces will be affected as well.
 
 ### direct
 ![title](images/circular-direct.png)
