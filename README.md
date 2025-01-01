@@ -63,11 +63,12 @@ is a valid design. E.g. when you have design constraints which prescribe to have
 the method just calls a DAO or repository and forwards the result to the initial caller.
 
 However, the interesting thing is that on the class diagram, it looks like there are many dependencies on `PassedObject`.
-According to common wisdom, this decreases the flexibility of `PassedObject`. But in reality neither ObjectProvider
-nor Forwarder are making use of the interface of PassedObject (neither fields nor methods are used), so there is no reduction
-of the flexibility of PassedObject, even though the class diagram shows dependencies.
-
-In _The Many Facets of Coupling_, Gregor Hohpe uses the term _change propagation_ which I find useful. The term
-focuses on _change_ while _coupling_ reflects that only at the first glance. 
+According to common wisdom, this decreases the flexibility of `PassedObject`. But in reality neither `ObjectProvider`
+nor `Forwarder` are making use of the interface of `PassedObject` (neither fields nor methods are used), so there is no reduction
+of the flexibility of `PassedObject`, even though the class diagram shows dependencies.
 
 ![title](images/passthrough.png)
+
+In _The Many Facets of Coupling_, Gregor Hohpe uses the term _change propagation_ which I find useful. The term
+focuses on _change_ while source code dependencies are sometimes, as shown in this example, mistakenly equated with decreased changeability.  
+
