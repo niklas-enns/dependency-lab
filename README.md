@@ -1,6 +1,6 @@
 # Dependency Lab
 
-Dependencies within an application, not across applications
+This repository is an experimental laboratory for coupling _within_ a single codebase.
 
 # How Dependencies _Appear_
 
