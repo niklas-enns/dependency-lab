@@ -24,9 +24,8 @@ Dependencies within an application, not across applications
   The compile-time coupling can also be reduced by introducing some kind of indirection (e.g. a java _interface_), but
   there is no evidence that this improves the evolvability of the application.
   Maybe, the compile-time dependencies are so in focus, because they appear more obviously. The kind of dependency that
-  slows down development speed
-  are not the ones appearing at compile-time but the ones that cross abstraction layers. Class A that knows too much
-  about class B, just like the example implementation in `niklase.intensity`
+  slows down development speed are not the ones appearing at compile-time but the ones that cross abstraction layers. 
+  Class A that knows too much about class B, just like the example implementation in `niklase.intensity`.
 
 # Experiments
 
@@ -70,5 +69,4 @@ of the flexibility of `PassedObject`, even though the class diagram shows depend
 ![title](images/passthrough.png)
 
 In _The Many Facets of Coupling_, Gregor Hohpe uses the term _change propagation_ which I find useful. The term
-focuses on _change_ while source code dependencies are sometimes, as shown in this example, mistakenly equated with decreased changeability.  
-
+focuses on _change_ while source code dependencies are sometimes, as shown in this example, mistakenly equated with decreased changeability.
