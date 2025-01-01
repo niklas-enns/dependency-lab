@@ -1,4 +1,4 @@
-package niklase.iface;
+package niklase.circular.iface;
 
 public interface HowBShouldLookForA {
     void printReport(String report);

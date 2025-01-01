@@ -35,10 +35,14 @@ The class diagram
 
 ## callbackObject
 
-## direct
+## Circular
+Circular dependencies attract attention, so it seems to be worthy having a look at them.
 
-## iface
+### direct
+![title](images/circular-direct.png)
 
+### iface
+![title](images/circular-with-interfaces.png)
 ## intensity
 
 The class `ClassThatExposesTooManyDetails` is intentionally implemented in a way that leads to high coupling to that

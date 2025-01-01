@@ -1,4 +1,4 @@
-package niklase.iface;
+package niklase.circular.iface;
 
 public class B implements HowBShouldLookForA {
     public HowAShouldLookForB howAShouldLookForB;

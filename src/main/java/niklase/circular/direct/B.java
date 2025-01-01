@@ -1,4 +1,4 @@
-package niklase.direct;
+package niklase.circular.direct;
 
 public class B {
     A a = new A();
