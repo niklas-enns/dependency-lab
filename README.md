@@ -26,10 +26,12 @@ Dependencies within an application, not across applications
   Maybe, the compile-time dependencies are so in focus, because they appear more obviously. The kind of dependency that
   slows down development speed are not the ones appearing at compile-time but the ones that cross abstraction layers. 
   Class A that knows too much about class B, just like the example implementation in `niklase.intensity`.
+* Class diagrams reflect source code dependencies. Not change coupling.π
 
 # Experiments
 
 ## callbackLambda
+The class diagram
 
 ## callbackObject
 
